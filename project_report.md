@@ -6,7 +6,7 @@ Name : Kishore Buridi
 Answer: First submission was successful. as all the predictions are positive numbers, no further changes are required to submit the output. 
 
 ### What was the top ranked model that performed?
-Answer: After the first training, WeightedEnsemble_L3 is the top ranked model with score_val -52.85
+Answer: After the first training, WeightedEnsemble_L3 is the top ranked model with score_val -52.80
 
 ## Exploratory data analysis and feature creation
 ### What did the exploratory analysis find and how did you add additional features?
@@ -14,7 +14,7 @@ Answer: 'datetime" feature is an object. AutoGluon did not create the feature 'h
 created the additional features like year, month, day, hour, minute and second using the Python lambda method and string split operations.
 
 ### How much better did your model preform after adding additional features and why do you think that is?
-Answer: After adding additional features, WeightedEnsemble_L3 is the top ranked model with score_val -32.11
+Answer: After adding additional features, WeightedEnsemble_L3 is the top ranked model with score_val -32.07
 The reason for the better results is due to new feature Hour & day of the week. generally car booking volumes are higher during working days. 
 
 ## Hyper parameter tuning
@@ -29,8 +29,8 @@ Answer: I would work on feature engineering to extract the data points for trend
 model			|auto_stack		|time_limit		|presets		|score
 ----------------|---------------|---------------|---------------|--------
 initial			|True			|600			|best_quality	|1.799
-add_features	|True			|600			|best_quality	|0.460
-hpo				|False	|		1200			|high_quality	|0.510
+add_features	|True			|600			|best_quality	|0.461
+hpo				|False	|		1200			|high_quality	|0.549
 
 ### Create a line plot showing the top model score for the three (or more) training runs during the project.
 
